@@ -12,13 +12,39 @@
 @import "../bulma/sass/utilities/functions";
 $family-primary: 'WhitneyLight', sans-serif;
 $success: #FFFCFC;
+$primary: #FFFCFC;
+$primary-invert: #FFFCFC;
 $secondary: #070D1E;
 $secondary-invert: $success;
 $tertiary: #9DCED3;
 $tertiary-invert: $success;
+$quaternary: #FFA98A;
+$quaternary-invert: $success;
 /*#89BBFE;*/
  /*#16F4D0;*/
 /*B80C09*/
+
+nav {
+	display: flex;
+	.columns {
+		width: 100%;
+		/*margin-bottom: 1.5rem !important;*/
+	}
+	.level-item {
+		justify-content: flex-start !important;
+	}
+	a:hover {
+		font-weight: 600;
+		background-color: $quaternary;
+	}
+	&.is-fixed-top {
+		/*padding-top: 3rem;*/
+		background-color:white !important;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 
 .title {
 	font-family: 'WhitneySemiBold';
