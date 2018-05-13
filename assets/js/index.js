@@ -4,7 +4,7 @@ $(document).ready(function(){
 		 if ($(window).scrollTop() >= navHeight) {
 			 $('nav').addClass('is-fixed-top');
 		 }
-		 if ($(window).scrollTop() < $('#about').offset().top) {
+		 if ($(window).scrollTop() < $('#about-columns').offset().top) {
 		 	$('nav').removeClass('is-fixed-top');
 		 }
 	});
